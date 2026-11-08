@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texto_pasos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasos: 0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/texto_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia: 0 m"
+        android:textSize="20sp" />
+
+    <com.example.me1_app.TrayectoriaView
+        android:id="@+id/dibujo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mantené el celular en la mano, horizontal y apuntando hacia donde caminás." />
+
+    <Button
+        android:id="@+id/boton_iniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar" />
+
+    <Button
+        android:id="@+id/boton_pausar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pausar" />
+
+    <Button
+        android:id="@+id/boton_reiniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar" />
+
+</LinearLayout>
